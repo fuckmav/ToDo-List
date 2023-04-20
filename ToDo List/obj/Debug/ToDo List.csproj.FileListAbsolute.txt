@@ -1,0 +1,11 @@
+\\wqeic\fsstudent\Students\221593\Visual Studio 2022\Code Snippets\Visual C#\My Code Snippets\ToDo List\bin\Debug\ToDo List.exe.config
+\\wqeic\fsstudent\Students\221593\Visual Studio 2022\Code Snippets\Visual C#\My Code Snippets\ToDo List\bin\Debug\ToDo List.exe
+\\wqeic\fsstudent\Students\221593\Visual Studio 2022\Code Snippets\Visual C#\My Code Snippets\ToDo List\bin\Debug\ToDo List.pdb
+\\wqeic\fsstudent\Students\221593\Visual Studio 2022\Code Snippets\Visual C#\My Code Snippets\ToDo List\obj\Debug\ToDo List.csproj.AssemblyReference.cache
+\\wqeic\fsstudent\Students\221593\Visual Studio 2022\Code Snippets\Visual C#\My Code Snippets\ToDo List\obj\Debug\ToDo List.csproj.SuggestedBindingRedirects.cache
+\\wqeic\fsstudent\Students\221593\Visual Studio 2022\Code Snippets\Visual C#\My Code Snippets\ToDo List\obj\Debug\ToDo_List.Form1.resources
+\\wqeic\fsstudent\Students\221593\Visual Studio 2022\Code Snippets\Visual C#\My Code Snippets\ToDo List\obj\Debug\ToDo_List.Properties.Resources.resources
+\\wqeic\fsstudent\Students\221593\Visual Studio 2022\Code Snippets\Visual C#\My Code Snippets\ToDo List\obj\Debug\ToDo List.csproj.GenerateResource.cache
+\\wqeic\fsstudent\Students\221593\Visual Studio 2022\Code Snippets\Visual C#\My Code Snippets\ToDo List\obj\Debug\ToDo List.csproj.CoreCompileInputs.cache
+\\wqeic\fsstudent\Students\221593\Visual Studio 2022\Code Snippets\Visual C#\My Code Snippets\ToDo List\obj\Debug\ToDo List.exe
+\\wqeic\fsstudent\Students\221593\Visual Studio 2022\Code Snippets\Visual C#\My Code Snippets\ToDo List\obj\Debug\ToDo List.pdb
